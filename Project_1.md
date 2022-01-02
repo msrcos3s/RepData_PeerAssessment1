@@ -36,6 +36,7 @@ ggplot(activity_ag) + geom_col(aes(x=date2,y=steps,group=date2,fill=steps)) +
   ggtitle("Total Steps Per Day")+
   theme(plot.margin=unit(c(0,0,0,0),"mm"))
 ```
+![Plot1](https://github.com/msrcos3s/RepData_PeerAssessment1/blob/master/Plots%20Prints/Figure1.png)
 
 ### Mean and median number of steps taken each day
 ```{r}
@@ -53,6 +54,7 @@ plot(x = activity_interval_ag$interval,y = activity_interval_ag$steps,
         xlab = "5 Minute Intervals Mean",
         ylab = "Average Number of Steps")
 ```
+![Plot2](https://github.com/msrcos3s/RepData_PeerAssessment1/blob/master/Plots%20Prints/Figure2.png)
 
 ### The 5-minute interval that, on average, contains the maximum number of steps
 ```{r}
@@ -88,6 +90,7 @@ ggplot(activity_merge_ag) + geom_col(aes(x=date2,y=steps,group=date2,fill=steps)
   ggtitle("Total Steps Per Day")+
   theme(plot.margin=unit(c(0,0,0,0),"mm"))
 ```
+![Plot3](https://github.com/msrcos3s/RepData_PeerAssessment1/blob/master/Plots%20Prints/Figure3.png)
 
 #### Mean and median total number of steps taken per day WITHOUT filling in the missing values
 ```{r}
@@ -115,3 +118,4 @@ plot(x = activity_int_weekend_ag$interval,y = activity_int_weekend_ag$steps,
 plot(x = activity_int_weekday_ag$interval,y = activity_int_weekday_ag$steps,
         type = "l",lwd=3, col="orange", main = "5-Minute Intervals \n Weekdays", xlab = "5-Minute Intervals Averages (Mean)", ylab = "Steps", ylim=c(0,200),xlim=c(0,2500))
 ```
+![Plot4](https://github.com/msrcos3s/RepData_PeerAssessment1/blob/master/Plots%20Prints/Figure4.png)
